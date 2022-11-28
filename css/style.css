@@ -21,3 +21,11 @@ body{
 .btn-gray:hover{
   background-color: rgba(166, 166, 166,0.5);
 }
+
+#block-on-generate{
+  display: none;
+}
+
+.height-120px{
+  height: 120px;
+}

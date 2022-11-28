@@ -14,9 +14,9 @@
   <title>js-biglietto-treno-form</title>
 </head>
 <body class="p-3">
-  <div class="container d-flex flex-column align-items-center">
+  <div class="container-fluid d-flex flex-column align-items-center">
     <h2 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-    <div class="card w-75">
+    <div class="card w-75 mb-5">
       <div class="card-body p-5 text-magenta">
         <div class="row justify-content-center g-5 mb-5">
           <div class="col text-center">
@@ -44,6 +44,36 @@
             <button id="cancel" class="btn btn-gray">Annulla</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div id="block-on-generate" class="w-75">
+      <h2 class="text-white">IL TUO BIGLIETTO</h2>
+      <div class="card p-3">
+       <div class="card-body">
+        <h4>Dettaglio passeggeri</h4>
+        <div class="row height-120px border border-secondary border-end-0">
+          <div class="col-3 bg-secondary">
+            <strong class="d-block fs-4">NOME PASSEGGERO</strong>
+            <strong id="user-name" class="d-block fs-4"></strong>
+          </div>
+          <div class="col-3 d-flex flex-column justify-content-evenly height-100">
+            <strong>Offerta</strong>
+            <span id="typeofTicket">Biglietto Standard</span>
+          </div>
+          <div class="col-2 d-flex flex-column justify-content-evenly height-100">
+            <strong>Carrozza</strong>
+            <span>5</span>
+          </div>
+          <div class="col-2 d-flex flex-column justify-content-evenly height-100">
+            <strong>Codice CP</strong>
+            <span>92911</span>
+          </div>
+          <div class="col-2 d-flex flex-column justify-content-evenly height-100">
+            <strong>Costo biglietto</strong>
+            <span id="price">Biglietto Standard</span>
+          </div>
+        </div>
+       </div>
       </div>
     </div>
   </div>
