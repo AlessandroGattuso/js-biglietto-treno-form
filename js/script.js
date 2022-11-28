@@ -15,11 +15,11 @@ generate.addEventListener("click", function(){
   price = km * 0.21;
 
   if(age === "Under-18"){
-    price *= 0.2;
+    price -= price * 0.2;
     typeofTicket = "Biglietto Under 18";
   }
   if(age === "Over-65"){
-    price *= 0.4;
+    price -= price * 0.4;
     typeofTicket = "Biglietto Over 65";
   }
 
