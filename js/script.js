@@ -1,5 +1,6 @@
 const generate = document.getElementById("generate");
-let fullName;
+const cancel = document.getElementById("cancel");
+
 let km;
 let age;
 let typeofTicket = "Biglietto ordinario";
@@ -25,4 +26,10 @@ generate.addEventListener("click", function(){
 
   document.getElementById("typeofTicket").innerHTML = typeofTicket;
   document.getElementById("price").innerHTML = price.toFixed(2) + "€";
+})
+
+cancel.addEventListener("click", function(){
+  document.getElementById("fullName").value = null;
+  document.getElementById("km").value = null;
+  document.getElementById("age").value = 'Adult';
 })
