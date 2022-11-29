@@ -19,6 +19,7 @@ generate.addEventListener("click", function(){
     price *= 0.8;
     typeofTicket = "Biglietto Under 18";
   }
+  
   if(age === "Over-65"){
     price *= 0.6;
     typeofTicket = "Biglietto Over 65";
